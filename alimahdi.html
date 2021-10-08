@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BURGER LIST</title>
+    </head>
+    <body>
+      <style>
+        body {
+          background-image: url('data:image/jpeg;base64,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');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+
+        <header>
+            <h1>BURGER LIST</h1>
+            <h3>We wish you a wonderful day</h3>
+        </header>
+
+        <main>
+
+            <section>
+                <form action="place-order.php" method="GET">
+                    <!-- label and input -->
+
+                    <!-- checkbox -->
+                    <fieldset>
+                        <legend style="color: blue;">🔥 Beef Burger 🔥</legend>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/66/9c/2c/burger-tygodnia-oldschool.jpg" width="250" height="200"> <br>
+                        <input type="checkbox" name="tomato" id=""> Tomato <br>
+                        <input type="checkbox" name="potato" id=""> Potato <br>
+                        <input type="checkbox" name="onion" id=""> lettuce <br>
+
+                        <legend>price</legend>
+                        <select name="size" id="size">
+                            <option value="1">IQD6000</option>
+                            <option value="2">IQD8000</option>
+                            <option value="3">IQD10000</option>
+                        </select>
+
+                        <br><br>
+
+                        <legend>Evaluation ⭐</legend>
+                        <select name="size" id="size">
+                            <option value="1">⭐</option>
+                            <option value="2">⭐ ⭐</option>
+                            <option value="3">⭐ ⭐ ⭐</option>
+                            <option value="4">⭐ ⭐ ⭐ ⭐</option>
+                            <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+                        </select>
+
+                    </fieldset>
+
+
+                    <br><br>
+
+                    <fieldset>
+                      <legend style="color: blue;">🔥 Chicken Burger 🔥</legend>
+                      <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg" width="250" height="200"> <br>
+                      <input type="checkbox" name="tomato" id=""> Tomato <br>
+                      <input type="checkbox" name="potato" id=""> Potato <br>
+                      <input type="checkbox" name="onion" id=""> lettuce <br>
+
+                      <legend>price</legend>
+                      <select name="size" id="size">
+                          <option value="1">IQD6000</option>
+                          <option value="2">IQD8000</option>
+                          <option value="3">IQD10000</option>
+                      </select>
+
+                      <br><br>
+
+                      <legend>Evaluation ⭐</legend>
+                      <select name="size" id="size">
+                          <option value="1">⭐</option>
+                          <option value="2">⭐ ⭐</option>
+                          <option value="3">⭐ ⭐ ⭐</option>
+                          <option value="4">⭐ ⭐ ⭐ ⭐</option>
+                          <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+                      </select>
+
+                  </fieldset>
+
+
+                  <br><br>
+
+                  <fieldset>
+                    <legend style="color: blue;">🔥 Monster Burger 🔥</legend>
+                    <img src="https://videohive.img.customer.envatousercontent.com/files/240052655/preview%20image.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=f331752123a38150d94d22b5a89fc724" width="250" height="200"> <br>
+                    <input type="checkbox" name="tomato" id=""> Tomato <br>
+                    <input type="checkbox" name="potato" id=""> Potato <br>
+                    <input type="checkbox" name="onion" id=""> lettuce <br>
+
+                    <legend>price</legend>
+                    <select name="size" id="size">
+                        <option value="1">IQD6000</option>
+                        <option value="2">IQD8000</option>
+                        <option value="3">IQD10000</option>
+                    </select>
+
+                    <br><br>
+
+                    <legend>Evaluation ⭐</legend>
+                    <select name="size" id="size">
+                        <option value="1">⭐</option>
+                        <option value="2">⭐ ⭐</option>
+                        <option value="3">⭐ ⭐ ⭐</option>
+                        <option value="4">⭐ ⭐ ⭐ ⭐</option>
+                        <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+                    </select>
+
+                </fieldset>
+
+
+                <br><br>
+
+                <fieldset>
+                  <legend style="color: blue;">🔥 Beef Burger 🔥</legend>
+                  <img src="https://www.foodrepublic.com/wp-content/uploads/2011/06/beefburger-700x467.jpg" width="250" height="200"> <br>
+                  <input type="checkbox" name="tomato" id=""> Tomato <br>
+                  <input type="checkbox" name="potato" id=""> Potato <br>
+                  <input type="checkbox" name="onion" id=""> lettuce <br>
+
+                  <legend>price</legend>
+                  <select name="size" id="size">
+                      <option value="1">IQD6000</option>
+                      <option value="2">IQD8000</option>
+                      <option value="3">IQD10000</option>
+                  </select>
+
+                  <br><br>
+
+                  <legend>Evaluation ⭐</legend>
+                  <select name="size" id="size">
+                      <option value="1">⭐</option>
+                      <option value="2">⭐ ⭐</option>
+                      <option value="3">⭐ ⭐ ⭐</option>
+                      <option value="4">⭐ ⭐ ⭐ ⭐</option>
+                      <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+                  </select>
+
+              </fieldset>
+
+
+              <br><br>
+
+                    <fieldset>
+                        <legend>Delivery</legend>
+                        <input type="radio" name="delivery" value="delivery"> Delivery <br>
+                        <input type="radio" name="delivery" value="pickup"> Pickup <br>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Restaurant Rating ⭐</legend>
+                        <select name="size" id="size">
+                            <option value="1">⭐</option>
+                            <option value="2">⭐ ⭐</option>
+                            <option value="3">⭐ ⭐ ⭐</option>
+                            <option value="4">⭐ ⭐ ⭐ ⭐</option>
+                            <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+                        </select>
+                    </fieldset>
+
+                    <br><br>
+                    <br><br>
+                    <button type="submit">Submit Order</button>
+
+
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <center>
+                &copy; 2021 <br>
+                ALI MAHDI MENU FOOD
+            </center>
+        </footer>
+        <br><br>
+        <br><br>
+    </body>
+</html>
